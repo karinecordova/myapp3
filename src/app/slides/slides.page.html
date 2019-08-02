@@ -1,23 +1,44 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>slides</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+    <ion-header translucent>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slides</title>
+        <link rel="stylesheet" href="https://ionicframework.com/docs/assets/ionic/css/ionic.bundle.css"/>
+        <script defer src="https://ionicframework.com/docs/assets/ionic/dist/ionic.js"></script>
+      <ion-toolbar>
+        <ion-title>Slides</ion-title>
+      </ion-toolbar>
+    </ion-header>
 
-<ion-content>
-  <ion-slides>
+    <ion-content fullscreen padding scroll-y="false">
+      <ion-slides>
 
-    <ion-slide>
-      <h1>Slide 1</h1>
-    </ion-slide>
+        <ion-slide>
+          <img src="../assets/imagens/online.jpg"/>
+          <h2>Welcome to the <b>ICA</b></h2>
+          <p>The <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code use.</p>
+        </ion-slide>
 
-    <ion-slide>
-      <h1>Slide 2</h1>
-    </ion-slide>
+        <ion-slide>
+          <img src="../assets/imagens/online.jpg"/>
+          <h2>What is Ionic?</h2>
+          <p><b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.</p>
+        </ion-slide>
 
-    <ion-slide>
-      <h1>Slide 3</h1>
-    </ion-slide>
-  </ion-slides>
-  <ion-button expand="full" href="home"> Voltar</ion-button>
-</ion-content>
+        <ion-slide>
+          <img src="../assets/imagens/online.jpg"/>
+          <h2>What is Ionic Pro?</h2>
+          <p><b>Ionic Pro</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app development agility to mobile dev teams.</p>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="../assets/imagens/online.jpg"/>
+          <h2>Ready to Play?</h2>
+          <ion-button fill="clear">Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+        </ion-slide>
+
+      </ion-slides>
+    </ion-content>
+  </ion-app>
+
+
