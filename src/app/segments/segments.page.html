@@ -7,14 +7,17 @@
 <ion-content>
 
   <ion-segment (ionChange)="segmentChanged($event)">
-    <ion-segment-button value="friends">
-      <ion-label>Friends</ion-label>
+    <ion-segment-button value="p01">
+      <ion-label>Ponto Turístico 1 </ion-label>
     </ion-segment-button>
-    <ion-segment-button value="enemies">
-      <ion-label>Enemies</ion-label>
+    <ion-segment-button value="p02">
+      <ion-label>Ponto Turístico 2</ion-label>
     </ion-segment-button>
   </ion-segment>
 
 {{texto}}
+<div *ngIf="habilitaimg">
+    <ion-img src="../assets/imagens/{{imagem}}"> </ion-img>
+</div>
 <ion-button expand="full" href="home"> Voltar</ion-button>
 </ion-content>

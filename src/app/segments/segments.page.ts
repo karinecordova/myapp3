@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class SegmentsPage implements OnInit {
  categoria:any;
  texto:any;
+ imagem:any;
+ habilitaimg:boolean=false;
   constructor() { }
 
   ngOnInit() {
@@ -15,12 +17,16 @@ export class SegmentsPage implements OnInit {
   segmentChanged(ev: any ) {
     //this.texto=ev;
     this.categoria=ev.detail.value;
-    console.log(this.categoria);
-    if(this.categoria=="friends"){
+    //console.log("Função", ev);
+    if(this.categoria=="p01"){
+      this.habilitaimg=true;
       this.texto="Curso Ionic ";
+      this.imagem="online.jpg";
     }
-    if(this.categoria=="enemies"){
+    if(this.categoria=="p02"){
+      this.habilitaimg=true;
       this.texto="Des. de Apps Ionic ";
+      this.imagem="teste.jpg";
     }
   }
 }
